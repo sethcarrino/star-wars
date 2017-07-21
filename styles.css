@@ -33,7 +33,7 @@ body{font-family:"Myriad Pro", Verdana, Arial, Helvetica, sans-serif;font-size:1
 {
 	position: absolute;
 	top: 100%;
-	animation: scroll 290s linear 15s infinite;
+	animation: scroll 290s linear 18s infinite;
 }
 
 @keyframes scroll {
