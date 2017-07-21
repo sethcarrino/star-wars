@@ -1,4 +1,4 @@
-body{font-family:"Myriad Pro", Verdana, Arial, Helvetica, sans-serif;font-size:100%;color:#333333;text-align:center;background-color:#000000;}p{
+body{font-family:"Myriad Pro", Verdana, Arial, Helvetica, sans-serif;font-size:100%;color:#333333;text-align:center;background-color: black; background-size: cover; }p{
   color:yellow;
 }
 #titles
@@ -28,6 +28,7 @@ body{font-family:"Myriad Pro", Verdana, Arial, Helvetica, sans-serif;font-size:1
 	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
 	pointer-events: none;
 }
+
 #titlecontent
 {
 	position: absolute;
@@ -38,4 +39,23 @@ body{font-family:"Myriad Pro", Verdana, Arial, Helvetica, sans-serif;font-size:1
 @keyframes scroll {
 	0% { top: 100%; }
 	100% { top: -170%; }
+}
+
+
+.gif{
+  width: 100%;
+  height: auto;
+  outline: none;
+}
+
+#gifContainer{
+  z-index: 1000;
+  position:relative;
+  top: -775px
+}
+
+#video{
+  width: 100%;
+  height: auto;
+  outline: none;
 }

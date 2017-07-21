@@ -4,7 +4,25 @@
 //////========================//////
 
 //======= FUNCTION THAT RUNS THE RNG TEXT CREATION ======//
-// function goTo() {
+
+
+var button = document.querySelector("#image");
+var video = document.querySelector("#video")
+
+button.addEventListener("click", function(){
+
+
+document.getElementById("video").play();
+document.getElementById("gifContainer").style.display = 'none';
+
+})
+
+
+
+button.addEventListener("click", setTimeout(function(){
+
+
+
 
 //====== RNG TEXT ARRAY SOURCE ======//
 var content =
@@ -26,6 +44,10 @@ starShips: ["Executor-class star dreadnought", "Sentinel-class landing craft", "
 }
 
 
+
+
+
+
 //====== RNG FUNCTION ======//
 
 function ranNumber(type) {
@@ -44,6 +66,7 @@ var noun = content.nouns
 //====== ARRAY OF STORIES/ POEMS ======//
 //---- Use:  ${ranNumber(variable)}  to replace key words in body.
 
+
 var body =
 [
   `${ranNumber(names)}'s kiss set ${ranNumber(names)} ablaze. The taste of his ${ranNumber(noun)} and his ${ranNumber(adjective)} scent made your ${ranNumber(noun)} spin and you didn’t dare to ${ranNumber(verb)} your ${ranNumber(noun)}, instead savouring the sensation and ${ranNumber(verb)} closer. His ${ranNumber(noun)} caressed your cheek making a quiver ${ranNumber(verb)} up your spine. The need for ${ranNumber(noun)} made the two of you part. Prying your eyes open you took in ${ranNumber(adjective)} gushes of ${ranNumber(adjective)} ${ranNumber(noun)}, through the dark crown of your lashes seeing him close made your heart swell and ${ranNumber(verb)}. Excitement pooled and dropped to your abdomen. Jughead leaned in again, softly the tip of his nose brushed against yours as he aimed for your lips again, but stopped. He was hesitant, you realized, perhaps he was wondering whether you wanted this just as much as he did. As a way to rid him of all doubt, your fingers curled on his shirt, a frail breath leaving your lips before you kissed him.`,
@@ -59,4 +82,14 @@ var body =
 document.querySelector('.main').innerHTML = ranNumber(body)
 
 
-// }
+
+
+
+
+
+
+
+
+
+
+}, 20000))
